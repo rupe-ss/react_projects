@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const element = <h1>React</h1>
+const element = <h1>Learning React !!!</h1>
 console.log(element)
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<h1>Learning React !!!</h1>);
+
+//Thought experiment: use .append() instead of ReactDOM
+document.getElementById("root").append(JSON.stringify(element))
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element);
